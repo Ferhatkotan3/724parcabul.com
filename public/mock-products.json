@@ -28,6 +28,56 @@
     "stock": 200,
     "image_url": "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop",
     "created_at": "2025-03-03T00:00:00Z"
+  },
+  {
+    "id": "p4",
+    "part_code": "AIR004",
+    "name": "Hava Filtresi",
+    "description": "Yüksek hava geçirgenliği, uzun ömür",
+    "price": 189.9,
+    "stock": 300,
+    "image_url": "https://images.unsplash.com/photo-1520452112805-c6692c840af4?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-03-20T00:00:00Z"
+  },
+  {
+    "id": "p5",
+    "part_code": "OIL5W30",
+    "name": "5W-30 Sentetik Motor Yağı 4L",
+    "description": "Geniş sıcaklık aralığında koruma",
+    "price": 1_099.0,
+    "stock": 65,
+    "image_url": "https://images.unsplash.com/photo-1603566234499-76f38b4b6a56?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-04-01T00:00:00Z"
+  },
+  {
+    "id": "p6",
+    "part_code": "WB001",
+    "name": "Silecek Takımı",
+    "description": "Sessiz ve çizgisiz temizlik",
+    "price": 249.0,
+    "stock": 220,
+    "image_url": "https://images.unsplash.com/photo-1621592484543-46fdc7f2b19a?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-04-12T00:00:00Z"
+  },
+  {
+    "id": "p7",
+    "part_code": "BAT70",
+    "name": "70Ah Akü",
+    "description": "Yüksek marş gücü, bakım gerektirmez",
+    "price": 2_399.0,
+    "stock": 40,
+    "image_url": "https://images.unsplash.com/photo-1603566234644-8b5b5a8d7758?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-04-18T00:00:00Z"
+  },
+  {
+    "id": "p8",
+    "part_code": "DISC320",
+    "name": "Ön Fren Diski (Çift)",
+    "description": "Isıya dayanıklı, yüksek performans",
+    "price": 1_749.0,
+    "stock": 52,
+    "image_url": "https://images.unsplash.com/photo-1618681317083-93a1b9230e1c?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-05-02T00:00:00Z"
   }
 ]
 
