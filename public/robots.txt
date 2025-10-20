@@ -1,0 +1,46 @@
+
+User-agent: *
+Allow: /
+
+# Ana sayfalar
+Allow: /
+Allow: /categories
+Allow: /cart
+Allow: /account
+Allow: /orders
+Allow: /login
+Allow: /register
+
+# Ürün sayfaları
+Allow: /product/*
+
+# Statik dosyalar
+Allow: /assets/*
+Allow: /images/*
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.ico
+
+# Sitemap
+Sitemap: https://724parcabul.com/sitemap.xml
+
+# Crawl-delay (saniye)
+Crawl-delay: 1
+
+# Özel bot direktifleri
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
