@@ -1,7 +1,7 @@
 
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useStore } from '../../store/useStore';
 import ProductCard from '../../components/product/ProductCard';
 import SearchBar from '../../components/common/SearchBar';
@@ -26,6 +26,7 @@ interface Category {
 }
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const { isDarkMode } = useStore();
   const [bestSellers, setBestSellers] = useState<Product[]>([]);
   const [newProducts, setNewProducts] = useState<Product[]>([]);
