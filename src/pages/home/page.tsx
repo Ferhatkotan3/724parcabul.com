@@ -39,7 +39,7 @@ const HomePage = () => {
   const fetchData = async () => {
     try {
       // public altından yerel JSON'u getir
-      const res = await fetch('/724parcabul.com/mock-products.json', { cache: 'no-store' });
+      const res = await fetch('mock-products.json', { cache: 'no-store' });
       const products = await res.json();
 
       // Kategorileri ürünlerden türet (isim listesini örnekledik)
