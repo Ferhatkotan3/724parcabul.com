@@ -1,0 +1,33 @@
+[
+  {
+    "id": "p1",
+    "part_code": "FLT001",
+    "name": "Motor Yağ Filtresi",
+    "description": "Yüksek kaliteli motor yağ filtresi",
+    "price": 459.0,
+    "stock": 120,
+    "image_url": "https://images.unsplash.com/photo-1581093588401-16ec7e5b9c9d?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-01-01T00:00:00Z"
+  },
+  {
+    "id": "p2",
+    "part_code": "BRK245",
+    "name": "Fren Balatası",
+    "description": "Uzun ömürlü disk fren balatası",
+    "price": 799.9,
+    "stock": 80,
+    "image_url": "https://images.unsplash.com/photo-1606229365485-93d3e6c02aa4?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-02-12T00:00:00Z"
+  },
+  {
+    "id": "p3",
+    "part_code": "SPK012",
+    "name": "Buji Seti (4'lü)",
+    "description": "Yüksek ateşleme performansı",
+    "price": 349.5,
+    "stock": 200,
+    "image_url": "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop",
+    "created_at": "2025-03-03T00:00:00Z"
+  }
+]
+

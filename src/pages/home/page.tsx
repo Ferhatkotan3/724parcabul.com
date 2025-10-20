@@ -5,8 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useStore } from '../../store/useStore';
 import ProductCard from '../../components/product/ProductCard';
 import SearchBar from '../../components/common/SearchBar';
-import { mockProducts } from '../../mocks/products';
-import { mockCategories } from '../../mocks/categories';
+// Build-time fallback: local JSON'dan okuyacağız
 
 interface Product {
   id: string;
@@ -39,21 +38,26 @@ const HomePage = () => {
 
   const fetchData = async () => {
     try {
-      // Simulate loading delay
-      await new Promise(resolve => setTimeout(resolve, 500));
-      
-      // Use mock data
-      setCategories(mockCategories.slice(0, 8));
-      
-      // Best sellers - products with higher prices (premium products)
-      const bestSellersData = mockProducts
-        .filter(product => product.price > 200)
-        .slice(0, 8);
+      // public altından yerel JSON'u getir
+      const res = await fetch('/724parcabul.com/mock-products.json', { cache: 'no-store' });
+      const products = await res.json();
+
+      // Kategorileri ürünlerden türet (isim listesini örnekledik)
+      const derivedCategories = [
+        { id: 'c1', name: 'Motor Parçaları', slug: 'motor-parcalari', productCount: products.length },
+        { id: 'c2', name: 'Fren Sistemi', slug: 'fren-sistemi', productCount: Math.ceil(products.length / 2) },
+        { id: 'c3', name: 'Elektrik', slug: 'elektrik', productCount: Math.ceil(products.length / 3) },
+      ];
+      setCategories(derivedCategories as any);
+
+      // En çok satanlar (fiyatı yüksekler)
+      const bestSellersData = products.filter((p: any) => p.price > 200).slice(0, 8);
       setBestSellers(bestSellersData);
-      
-      // New products - sorted by created_at (newest first)
-      const newProductsData = mockProducts
-        .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+
+      // Yeni ürünler (created_at)
+      const newProductsData = products
+        .slice()
+        .sort((a: any, b: any) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
         .slice(0, 8);
       setNewProducts(newProductsData);
       
