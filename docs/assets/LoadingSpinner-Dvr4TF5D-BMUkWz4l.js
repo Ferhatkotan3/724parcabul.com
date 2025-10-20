@@ -1,2 +1,1 @@
 import{G as a,x as r}from"./index-KYK8dnUx.js";function n({size:e="md",className:s=""}){const{isDarkMode:o}=a(),t={sm:"w-4 h-4",md:"w-8 h-8",lg:"w-12 h-12"};return r.jsx("div",{className:`flex items-center justify-center ${s}`,children:r.jsx("div",{className:`${t[e]} border-2 border-t-transparent rounded-full animate-spin ${o?"border-gray-600":"border-gray-300"}`,style:{borderTopColor:"#3B82F6"}})})}export{n as d};
-//# sourceMappingURL=LoadingSpinner-Dvr4TF5D-BMUkWz4l.js.map
