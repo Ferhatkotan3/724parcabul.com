@@ -1,2 +1,0 @@
-import{u as n,j as r}from"./index-B45Pq7U6.js";function d({size:e="md",className:s=""}){const{isDarkMode:o}=n(),t={sm:"w-4 h-4",md:"w-8 h-8",lg:"w-12 h-12"};return r.jsx("div",{className:`flex items-center justify-center ${s}`,children:r.jsx("div",{className:`${t[e]} border-2 border-t-transparent rounded-full animate-spin ${o?"border-gray-600":"border-gray-300"}`,style:{borderTopColor:"#3B82F6"}})})}export{d as L};
-//# sourceMappingURL=LoadingSpinner-Dvr4TF5D.js.map
